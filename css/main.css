@@ -151,76 +151,76 @@ button:hover {
 
 @media (min-width: 1950px) {
   #scores {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #startScreen div h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   button {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   #highScore {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   #score {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   header {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 1600px) {
   #scores {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   #startScreen div h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   button {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   #highScore {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   #score {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   header {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300) {
   #scores {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   #startScreen div h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   button {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   header {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #highScore {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   #score {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   header {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
