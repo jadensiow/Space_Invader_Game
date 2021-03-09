@@ -58,5 +58,5 @@ const initialGameSummary = {
   playerSize: 0.07,
   playerBulletSize: 0.04,
   enemySize: 0.07,
-  enemyBulletSize: 0.05,
+  enemyBulletSize: 0.03,
 };

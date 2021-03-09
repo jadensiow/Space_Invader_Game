@@ -127,25 +127,25 @@ button:hover {
 }
 @media (min-width: 2800px) {
   #scores {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   #startScreen div h1 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   button {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   #highScore {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   #score {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   header {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 }
 

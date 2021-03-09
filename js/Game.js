@@ -32,8 +32,6 @@ const startGameDom = document.getElementById("startScreen");
 startGameDom.style.width = gameWidth + "px";
 startGameDom.style.height = gameHeight + "px";
 
-// millisecond on level shown
-
 // Sound
 const bulletAudio = new Audio("audio/laser.m4a");
 bulletAudio.volume = 0.2;
