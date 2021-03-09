@@ -238,7 +238,7 @@ const enemyShooting = (x, y, enemyBulletImg) => {
   bulletDomElement.className = "enemyBullets";
   bulletDomElement.width = gameDom.offsetWidth * gameSummary.enemyBulletSize;
 
-  gameDom.appendChild(bulletDomElement);
+  allBulletsDom.appendChild(bulletDomElement);
 
   const bullets = { x, y, bulletDomElement };
 
@@ -345,11 +345,11 @@ const boundaryMap = () => {
   // Set up boundary so not to go out of page
   // Teleport from left to right and right to left on x axis
   if (gameSummary.playerXPos < gameBorderXMin - gameBorderXMax * 0.02) {
-    gameSummary.playerXPos = gameBorderXMax * 1.06;
+    gameSummary.playerXPos = gameBorderXMin - gameBorderXMax * 0.01;
     updatePosMap(playerDom, gameSummary.playerXPos, gameSummary.playerYPos);
   }
   if (gameSummary.playerXPos > gameBorderXMax * 1.07) {
-    gameSummary.playerXPos = gameBorderXMin;
+    gameSummary.playerXPos = gameBorderXMax * 1.06;
     updatePosMap(playerDom, gameSummary.playerXPos, gameSummary.playerYPos);
   }
 
