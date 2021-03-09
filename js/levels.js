@@ -20,7 +20,7 @@ const levelObjects = {
     enemyVerSpace: 100,
     numEnemyrow: 4,
     enemyHitsToDestroy: 1,
-    maxEnemyCD: 14,
+    maxEnemyCD: 13,
     minEnemyCD: 0.5,
     enemyBulletSpeed: 400,
     enemyImage: "img/enemy1.png",
