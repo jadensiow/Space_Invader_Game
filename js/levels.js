@@ -15,7 +15,7 @@ const levelObjects = {
 
     // Enemy
     enemyHorPad: 80,
-    enemyPerRow: 8,
+    enemyPerRow: 6,
     enemyVerPad: 100,
     enemyVerSpace: 100,
     numEnemyrow: 2,
