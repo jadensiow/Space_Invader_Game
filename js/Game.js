@@ -13,7 +13,7 @@ const gameWidth = 1200;
 let gameSummary = {};
 
 // Indicate start of level
-let LEVEL = 1;
+let level = 1;
 // milliseconds to show next stage
 const levelDurIndicator = 2000;
 
@@ -21,7 +21,7 @@ const levelDurIndicator = 2000;
 let player;
 let gameBorderXMin, gameBorderXMax, gameBorderYMin, gameBorderYmax;
 let animateFrames;
-let SCORE, HIGH_SCORE, gameOver;
+let score, high_score, gameOver;
 
 // Dom elements UI
 const scoreHeader = document.getElementById("score");
@@ -49,12 +49,12 @@ gameDom.style.width = gameWidth + "px";
 gameDom.style.height = gameHeight + "px";
 
 // Move to keys (Key code up=38 down 40 left 37 right 39 space 32)
-const leftKeyCode = 37;
-const rightKeyCode = 39;
-const upKeyCode = 38;
-const downKeyCode = 40;
-const spaceKeyCode = 32;
-const xKeyCode = 88;
+const LEFT_KEY_CODE = 37;
+const RIGHT_KEY_CODE = 39;
+const UP_KEY_CODE = 38;
+const DOWN_KEY_CODE = 40;
+const SPACE_KEY_CODE = 32;
+const X_KEY_CODE = 88;
 
 // For keymovement
 let movement = {
@@ -109,18 +109,18 @@ const initGameSummary = (levelObject) => {
 
 // Update scores and the highscores with storage
 const updateScores = () => {
-  if (SCORE > HIGH_SCORE) {
-    HIGH_SCORE = SCORE;
-    localStorage.setItem(lsHighScore, HIGH_SCORE);
+  if (score > high_score) {
+    high_score = score;
+    localStorage.setItem(lsHighScore, high_score);
   }
 
-  highScoreHeader.innerText = `High Score: ${HIGH_SCORE}`;
-  scoreHeader.innerText = `Score: ${SCORE}`;
+  highScoreHeader.innerText = `High Score: ${high_score}`;
+  scoreHeader.innerText = `Score: ${score}`;
 };
 
 // Level animation
 const indicateLevel = () => {
-  levelIndicator.innerText = `Level ${LEVEL}`;
+  levelIndicator.innerText = `Level ${level}`;
   levelIndicator.style.display = "block";
 
   // Animation of next stage sentence
@@ -133,9 +133,9 @@ const indicateLevel = () => {
 };
 
 const changeLevel = () => {
-  LEVEL += 1;
+  level += 1;
   //console.log(LEVEL);
-  initGameSummary(levelObjects[LEVEL]);
+  initGameSummary(levelObjects[level]);
   // can also add default values up after each stage level* values
 
   // Reset player image as tend to disappear somehow
@@ -305,18 +305,18 @@ const deleteAmmo = val => {
 const keyDown = (key) => {
   //console.log(key);
   key.preventDefault();
-  if (key.keyCode === leftKeyCode) {
+  if (key.keyCode === LEFT_KEY_CODE) {
     movement.leftMove = true;
-  } else if (key.keyCode === rightKeyCode) {
+  } else if (key.keyCode === RIGHT_KEY_CODE) {
     movement.rightMove = true;
-  } else if (key.keyCode === upKeyCode) {
+  } else if (key.keyCode === UP_KEY_CODE) {
     movement.upMove = true;
-  } else if (key.keyCode === downKeyCode) {
+  } else if (key.keyCode === DOWN_KEY_CODE) {
     movement.downMove = true;
-  } else if (key.keyCode === spaceKeyCode) {
+  } else if (key.keyCode === SPACE_KEY_CODE) {
     movement.spaceMove = true;
     bulletAudio.play();
-  } else if (key.keyCode === xKeyCode) {
+  } else if (key.keyCode === X_KEY_CODE) {
     movement.xMove = true;
   }
 };
@@ -324,17 +324,17 @@ const keyDown = (key) => {
 const keyUp = (key) => {
   key.preventDefault();
 
-  if (key.keyCode === leftKeyCode) {
+  if (key.keyCode === LEFT_KEY_CODE) {
     movement.leftMove = false;
-  } else if (key.keyCode === rightKeyCode) {
+  } else if (key.keyCode === RIGHT_KEY_CODE) {
     movement.rightMove = false;
-  } else if (key.keyCode === upKeyCode) {
+  } else if (key.keyCode === UP_KEY_CODE) {
     movement.upMove = false;
-  } else if (key.keyCode === downKeyCode) {
+  } else if (key.keyCode === DOWN_KEY_CODE) {
     movement.downMove = false;
-  } else if (key.keyCode === spaceKeyCode) {
+  } else if (key.keyCode === SPACE_KEY_CODE) {
     movement.spaceMove = false;
-  } else if (key.keyCode === xKeyCode) {
+  } else if (key.keyCode === X_KEY_CODE) {
     movement.xMove = false;
   }
 };
@@ -424,7 +424,7 @@ const checkCollide = (ammo) => {
         enemyHitAudio.play(); // play enemy hit audio
 
         // enemy died so update score
-        SCORE += 10;
+        score += 10;
 
         updateScores();
 
@@ -481,8 +481,8 @@ const deletePlayer = () => {
 
   theDiv.innerHTML = `
         <h1>Game Over </h1>
-        <h2>Your Score: ${SCORE}</h2>
-        <h2>Your High Score: ${HIGH_SCORE}</h2>
+        <h2>Your Score: ${score}</h2>
+        <h2>Your High Score: ${high_score}</h2>
     `;
 };
 
@@ -499,12 +499,12 @@ const startNewGame = () => {
   window.addEventListener("keyup", keyUp);
 
   // Store highscore
-  HIGH_SCORE = localStorage.getItem(lsHighScore)
+  high_score = localStorage.getItem(lsHighScore)
     ? localStorage.getItem(lsHighScore)
     : 0;
 
-  SCORE = 0;
-  LEVEL = 0;
+  score = 0;
+  level = 0;
 
   gameOver = false;
 
