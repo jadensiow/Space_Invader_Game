@@ -1,0 +1,252 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  text-align: center;
+  background: black;
+  color: #fff;
+  padding: 10px;
+}
+
+#startScreen {
+  border: 1px solid black;
+  margin: 0 auto;
+  background-image: url("../img/background.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#startScreen div h1 {
+  font-size: 4rem;
+}
+
+#startScreen div {
+  color: bisque;
+}
+
+#startScreen #Guide {
+  color: lightsalmon;
+  text-align: center;
+}
+
+button {
+  outline: none;
+  color: #27ae60;
+  border: 2px solid #27ae60;
+  border-radius: 10px;
+  background-color: transparent;
+  font: bolder;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #27ae60;
+  color: white;
+}
+
+#Space {
+  display: none;
+  border: 1px solid black;
+  margin: 0 auto;
+  background-image: url(../img/background.png);
+  background-size: cover;
+  animation: scroll-background 25s linear infinite;
+  position: relative;
+}
+
+#bulletsAll {
+  position: relative;
+}
+
+#scores {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: white;
+}
+
+#levelIndicator {
+  display: none;
+  color: white;
+  font-size: 4rem;
+  font-weight: bolder;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.playerBullets {
+  position: absolute;
+}
+
+.enemyBullets {
+  position: absolute;
+  margin-left: -2.5px;
+}
+
+.player {
+  position: absolute;
+  margin-left: -30px;
+  margin-top: 10px;
+}
+
+.enemy {
+  position: absolute;
+}
+
+@keyframes scroll-background {
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: 800px;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+@media (min-width: 2800px) {
+  #scores {
+    font-size: 5rem;
+  }
+
+  #startScreen div h1 {
+    font-size: 5rem;
+  }
+
+  button {
+    font-size: 5rem;
+  }
+  #highScore {
+    font-size: 5rem;
+  }
+  #score {
+    font-size: 5rem;
+  }
+
+  header {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 1950px) {
+  #scores {
+    font-size: 3rem;
+  }
+
+  #startScreen div h1 {
+    font-size: 3rem;
+  }
+
+  button {
+    font-size: 3rem;
+  }
+  #highScore {
+    font-size: 3rem;
+  }
+  #score {
+    font-size: 3rem;
+  }
+
+  header {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  #scores {
+    font-size: 3rem;
+  }
+
+  #startScreen div h1 {
+    font-size: 3rem;
+  }
+
+  button {
+    font-size: 3rem;
+  }
+  #highScore {
+    font-size: 3rem;
+  }
+  #score {
+    font-size: 3rem;
+  }
+
+  header {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #scores {
+    font-size: 2rem;
+  }
+
+  #startScreen div h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 2rem;
+  }
+  header {
+    font-size: 2rem;
+  }
+  #highScore {
+    font-size: 2rem;
+  }
+  #score {
+    font-size: 2rem;
+  }
+
+  header {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #scores {
+    font-size: 1rem;
+  }
+
+  #startScreen div h1 {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+  header {
+    font-size: 1rem;
+  }
+  #highScore {
+    font-size: 1rem;
+  }
+  #score {
+    font-size: 1rem;
+  }
+
+  header {
+    font-size: 1rem;
+  }
+}

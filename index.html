@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alien Invasion</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="Whole">
+      <header style="margin-bottom: 0.5rem">Alien Invasion</header>
+
+      <div id="startScreen">
+        <div id="Guide">
+          <h2>
+            Shoot down all aliens, avoid lasers and try to beat the highscore
+          </h2>
+
+          <h2>
+            Each stage will have different kinds of aliens and spaceships. So be
+            very careful!
+          </h2>
+          <div id="Instruction"><h2>Instructions</h2></div>
+          <div>
+            <h3>
+              Arrow keys to control, Space to shoot and X for special power
+            </h3>
+          </div>
+        </div>
+
+        <div><h2>Start Game</h2></div>
+
+        <div><button id="startGameButton">Start</button></div>
+      </div>
+
+      <div id="Space">
+        <div id="scores">
+          <h3 id="score"></h3>
+          <h3 id="highScore"></h3>
+        </div>
+        <div id="bulletsAll"></div>
+
+        <div id="levelIndicator">Level 1</div>
+      </div>
+    </div>
+
+    <script src="js/constants.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/playerShoot.js"></script>
+
+    <script src="js/Game.js"></script>
+  </body>
+</html>
