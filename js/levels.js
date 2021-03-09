@@ -3,7 +3,7 @@
 const levelObjects = {
   1: {
     playerBulletSpeed: 500,
-    moveSpeed: 300,
+    moveSpeed: 500,
     playerBulletCD: 0.5,
     playerImage: "img/player1.png",
     playerBulletImg: "img/bulletplayer1.png",
@@ -20,7 +20,7 @@ const levelObjects = {
     enemyVerSpace: 100,
     numEnemyrow: 4,
     enemyHitsToDestroy: 1,
-    maxEnemyCD: 12,
+    maxEnemyCD: 14,
     minEnemyCD: 0.5,
     enemyBulletSpeed: 400,
     enemyImage: "img/enemy1.png",
