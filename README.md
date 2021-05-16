@@ -18,7 +18,7 @@ Arrow keys to move. Players are not able to move pass the X and Y axis boundary
 Spacebar to shoot
 X key to shoot special ammos that is more powerful and a longer cooldown
 
-https://user-images.githubusercontent.com/78722564/118397863-a41b6b80-b688-11eb-86e6-7767772cad26.gif
+![Animation1](https://user-images.githubusercontent.com/78722564/118397863-a41b6b80-b688-11eb-86e6-7767772cad26.gif)
 
 ### Different level of stages with different effect
 
