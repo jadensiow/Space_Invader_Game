@@ -10,13 +10,17 @@ There are a total of 5 stages and more stages can be easily added. Players and e
 
 ### Movement
 
-Arrow keys to move. If player move outside the X-axis boundary, player will appear on the opposite side. For the Y-axis, player cannot move outside the boundary.
+Arrow keys to move. Players are not able to move pass the X and Y axis boundary
 
 ### Bullets
 
 2 kinds of ammo are available. Ammos will powerup as you proceed later to the stage.
 Spacebar to shoot
 X key to shoot special ammos that is more powerful and a longer cooldown
+
+### Different level of stages with different effect
+
+Proceed through different stages to unlock different powerups and enemies
 
 ## Available future development
 
