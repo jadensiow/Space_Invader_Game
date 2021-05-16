@@ -1,25 +1,25 @@
 # Space_Invader_Game
 
-Summary of methods
-The game is run on the basis of using css transform and translate.
-When the images are created, a X and Y coordinates is recorded onto the screen.
-For ammos, they are created and store in an array and translate onto the background.
-Once translated, y coordinates are change according to the delta time and thus they can move
-For the player movement, it make use of having the keycode matching and once match, the movement will be updated onto the background
-The boundary setting is set up to prevent movement out of a certain area such that if it wants to go beyond a certain X or Y axis, a new X or Y coordinate is given
-Ammos touching the player or enemy are based on collision testing
+## Description
 
-Approach
-The approach of the game is first thinking of ways to move the player, followed by a standard way of having enemies to appear on the screen.
-When moving the player and shooting the ammo, there is no cooldown and need to research on how to apply delta time onto this with the css transform.
-Next, adding of enemies is just making use of calculation of padding. Adding of enemy ammo has the same basis of player ammo.
+The game is made using vanilla Javascript. Every movement on the map is using CSS transform and translate. Enemies, player and bullets are created and store in different arrays and translated to the map.
+Standard collision detection of using rectangle intersecting was used.
+There are a total of 5 stages and more stages can be easily added. Players and enemies settings can be change easily too. At the end of the game, a highscore is stored in the local storage.
 
-Installation
-Arrow keys to move
-X to shoot special ammo, has a longer cooldown
-Space to shoot, shorter cooldown
+## Gameplay
 
-Future developmemt
+### Movement
+
+Arrow keys to move. If player move outside the X-axis boundary, player will appear on the opposite side. For the Y-axis, player cannot move outside the boundary.
+
+### Bullets
+
+2 kinds of ammo are available. Ammos will powerup as you proceed later to the stage.
+Spacebar to shoot
+X key to shoot special ammos that is more powerful and a longer cooldown
+
+## Available future development
+
 Pausing the whole animation when pause is press
 Fix the resolution for all screen types
 Increase pattern of enemies ammo
