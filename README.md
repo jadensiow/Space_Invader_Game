@@ -24,6 +24,8 @@ X key to shoot special ammos that is more powerful and a longer cooldown
 
 Proceed through different stages to unlock different powerups and enemies
 
+![Animation2](https://user-images.githubusercontent.com/78722564/118398038-6bc85d00-b689-11eb-9183-7fdd5cb870e4.gif)
+
 ## Available future development
 
 Pausing the whole animation when pause is press
